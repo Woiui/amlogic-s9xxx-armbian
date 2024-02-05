@@ -79,7 +79,7 @@ software_102() {
         [[ "${use_ssl,,}" =~ ^[y] ]] && use_ssl="yes" || use_ssl="no"
         echo -e "${INFO} Your own SSL Certificate Selection: [ ${use_ssl} ]"
 
-        # Instructions(English): https://hub.docker.com/r/portainer/portainer-ce
+        # Instructions(English): https://hub.docker.com/r/outlovecn/portainer-cn
         docker volume create ${container_name}_data
         if [[ "${use_ssl}" == "yes" ]]; then
             # https://docs.portainer.io/advanced/ssl
